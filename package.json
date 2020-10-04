@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel script.js -d dist",
-    "start": "npm run build && node dist/script.js"
+    "start": "webpack-dev-server --open --mode development --port 8081 --env.API_URL=http://localhost:8080/api",
+    "build": "webpack --mode production --env.API_URL=./movie-quote-service/api"
   },
   "keywords": [],
   "author": "",
