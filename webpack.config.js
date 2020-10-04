@@ -5,7 +5,7 @@ require('@babel/register');
 
 module.exports = env => {
   return {
-    entry: ['./src/index.js', './src/style.css'],
+    entry: ['./src/index.js', './src/main.css'],
     output: {
       path: path.resolve(__dirname, 'dist/'),
       filename: 'bundle.js'
